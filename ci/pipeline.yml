@@ -17,19 +17,19 @@ resources:
   type: git
   source:
     uri: https://github.com/get-iplayer/get_iplayer
-    tag_filter: v*.** 
+    tag_filter: v*.**
     branch: master
 
 - name: docker-image-repo
   type: git
   source:
-    uri: https://github.com/danhigham/get-iplayer-docker.git 
+    uri: https://git.high.am/danhigham/get-iplayer-docker.git
+    skip_ssl_verification: true
     branch: master
 
 - name: docker-image
   type: docker-image
   source:
-    email: {{docker-hub-email}}
-    username: {{docker-hub-username}}
-    password: {{docker-hub-password}}
-    repository: {{docker-hub-repo}}
+    username: {{harbor-username}}
+    password: {{harbor-password}}
+    repository: {{harbor-repo}}

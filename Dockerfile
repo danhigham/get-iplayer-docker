@@ -5,7 +5,7 @@ WORKDIR /root
 RUN apk update
 RUN apk add --no-cache git perl perl-html-parser perl-http-cookies \
     perl-libwww perl-xml-libxml perl-lwp-protocol-https libc6-compat \
-    ffmpeg perl-mojolicious
+    ffmpeg perl-mojolicious jq curl
 
 RUN git clone https://github.com/get-iplayer/get_iplayer.git \
     && cd get_iplayer \
