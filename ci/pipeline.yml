@@ -23,8 +23,7 @@ resources:
 - name: docker-image-repo
   type: git
   source:
-    uri: https://git.high.am/danhigham/get-iplayer-docker.git
-    skip_ssl_verification: true
+    uri: https://github.com/danhigham/get-iplayer-docker.git
     branch: master
 
 - name: docker-image
